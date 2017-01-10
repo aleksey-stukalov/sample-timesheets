@@ -66,7 +66,7 @@
     </filter-mapping>
     <context-param>
         <param-name>appComponents</param-name>
-        <param-value>com.haulmont.cuba com.haulmont.reports com.haulmont.charts</param-value>
+        <param-value>com.haulmont.cuba</param-value>
     </context-param>
     <servlet>
         <servlet-name>rest_api</servlet-name>

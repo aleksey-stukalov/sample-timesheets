@@ -14,7 +14,6 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-
 <screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
     <screen id="ts$Client.browse" template="/com/haulmont/timesheets/gui/client/client-browse.xml"/>
     <screen id="ts$Client.edit" template="/com/haulmont/timesheets/gui/client/client-edit.xml"/>

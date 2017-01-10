@@ -8,19 +8,11 @@ buildscript {
                 password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : 'cuba123')
             }
         }
-        maven {
-            url 'https://repo.cuba-platform.com/content/groups/premium'
-            credentials {
-                username(rootProject.hasProperty('premiumRepoUser') ? rootProject['premiumRepoUser'] : System.getenv('CUBA_PREMIUM_USER'))
-                password(rootProject.hasProperty('premiumRepoPass') ? rootProject['premiumRepoPass'] : System.getenv('CUBA_PREMIUM_PASSWORD'))
-            }
-        }
+        
     }
     dependencies {
         classpath "com.haulmont.gradle:cuba-plugin:$cubaVersion"
         classpath "com.haulmont.cuba:cuba-global:$cubaVersion"
-        classpath "com.haulmont.reports:reports-global:$cubaVersion"
-        classpath "com.haulmont.charts:charts-global:$cubaVersion"
     }
 }
 
@@ -181,8 +173,6 @@ configure(webModule) {
         compile(guiModule)
         themes("com.haulmont.cuba:cuba-web-themes:$cubaVersion")
         provided("com.haulmont.cuba:cuba-web-themes:$cubaVersion")
-
-        webcontent(group: 'com.haulmont.charts', name: 'charts-web', version: cubaVersion, classifier: 'web', ext: 'zip')
     }
 
     jar {

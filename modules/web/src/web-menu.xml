@@ -14,23 +14,21 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
-    <menu id="timesheets" insertBefore="reports">
+    <menu id="timesheets" insertBefore="administration">
         <item id="calendar-screen" shortcut="CTRL-ALT-C"/>
         <item id="simple-weekly-timesheets" shortcut="CTRL-ALT-W"/>
         <item id="ts$TimeEntry.browse"/>
         <item id="ts$Task.browse" shortcut="CTRL-ALT-T"/>
     </menu>
-    <menu id="projects" insertAfter="timesheets">
+    <menu id="projects" insertBefore="administration">
         <item id="ts$Client.browse"/>
         <item id="ts$Project.browse" shortcut="CTRL-ALT-P"/>
         <item id="approve-screen" shortcut="CTRL-ALT-A"/>
         <item id="ts$TimeEntry.all-approve"/>
         <item id="ts$TimeEntry.all"/>
-        <item id="charts-screen"/>
     </menu>
-    <menu id="timesheet-settings" insertAfter="projects">
+    <menu id="timesheet-settings" insertBefore="administration">
         <item id="work-time-settings" openType="DIALOG"/>
         <item id="ts$Holiday.browse"/>
         <separator/>

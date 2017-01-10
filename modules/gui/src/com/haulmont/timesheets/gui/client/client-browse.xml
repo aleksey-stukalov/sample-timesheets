@@ -14,7 +14,6 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd" caption="msg://browseCaption"
         class="com.haulmont.timesheets.gui.client.ClientBrowse" focusComponent="clientsTable"
         lookupComponent="clientsTable" messagesPack="com.haulmont.timesheets.gui.client">
